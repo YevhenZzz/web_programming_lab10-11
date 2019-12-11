@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cache.manifest">
+<head>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cuprum" />
+    <meta charset="UTF-8">
+    <title>Just Eminem</title>
+    <style>
+        span {
+            color: black;
+            background: white;
+            width: 30px;
+            border-radius: 25px 25px;
+            padding-bottom: 2px;
+            padding-left: 12px;
+
+        }
+        @media screen and (min-width: 1080px) {
+            span {
+                display: none;
+                font-size: 20px  ;
+            }
+            h3 {
+                display: none;
+            }
+
+        }
+        @media screen and (max-width: 1080px){
+            span {
+                display: block;
+                color: black;
+            }
+        }
+        h1 {
+            color: white;
+        }
+        .leftpic{
+            float: left;
+            position: relative; left: -23%;
+        }
+        body
+        { background: url(eminem_back.jpg) no-repeat fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+<input type="checkbox" id="nav-toggle" hidden>
+<header>
+
+    <nav class="dws-menu">
+        <ul>
+            <img src="eminem_logo.jpg" alt="logo here" width="120" height="120" class="leftpic">
+            <li><a href="index.html"><i class="fa fa-"></i>Main</a></li>
+            <li><a href="news.html"><i class="fa fa-"></i>News</a></li>
+            <li><a href="#"><i class="fa fa-"></i>For fans</a>
+            <ul>
+                <li><a href="fans_appeal.html">Fan club</a></li>
+                <li><a href="tour_schedule.html">Tour schedule</a></li>
+                <li><a href="#">Lyrics</a></li>
+            </ul>
+            </li>
+            <li><a href="fans_appeal.html"><i class="fa fa-"></i>Fans appeal</a></li>
+            <li><a href="concert_venue.html"><i class="fa fa-"></i>Concert Venue</a></li>
+            <li><a href="admin.html"><i class="fa fa-"></i>Admin</a></li>
+        </ul>
+    </nav>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">MAIN</a>
+            <a href="news.html">NEWS</a>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">FOR FANS</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">FAN CLUB</a>
+                    <a href="tour_schedule.html">TOUR SCHEDULE</a>
+                    <a href="#">LYRICS</a>
+                </div>
+            </div>
+            <a href="fans_appeal.html">FANS APPEAL</a>
+            <a href="concert_venue.html">CONCERT VENUE</a>
+            <a href="admin.html">ADMIN</a>
+        </div>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "25%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+    </script>
+</header>
+
+    <br><br><br><br><br><br><br><br><br>
+<center><h1>About singer</h1></center>
+    <p style="position: relative; left: 10%;width: 80%; font-style: oblique;line-height: 175%"><font color="#9acd32у" size="5">
+        <font color="yellow"size="6"> Marshall Bruce Mathers III - </font> (born October 17, 1972), known professionally as Eminem (/ˌɛmɪˈnɛm/; often stylized as EMINƎM), is an American rapper, songwriter, record producer, record executive, film producer, and actor. He is consistently cited as one of the greatest and most influential rappers of all time and was labeled the "King of Hip Hop" by Rolling Stone magazine.[2][3] In addition to his solo career, Eminem was a member of the hip hop group D12. He is also known for his collaborations with fellow Detroit-based rapper Royce da 5'9"; the two are collectively known as Bad Meets Evil.
+        After his debut album Infinite (1996) and the extended play Slim Shady EP (1997), Eminem signed with Dr. Dre's Aftermath Entertainment and subsequently achieved mainstream popularity in 1999 with The Slim Shady LP, which earned him his first Grammy Award for Best Rap Album.[4] His next two releases, 2000's The Marshall Mathers LP and 2002's The Eminem Show, were worldwide successes, with each being certified diamond in U.S. sales and both winning Best Rap Album Grammy Awards—making Eminem the first artist to win the award for three consecutive LPs
+    </font>
+    </p>
+<br><br><br>
+<center><h1>Best album</h1></center>
+<center><img src="eminem_best_album.jpg" alt="best_album" width="600" height="450"></center>
+<footer>
+    <font color="white"> Mady by Yevhen Bufan -->  </font> <a href="https://www.instagram.com/jsscotecry">Мій Інстаграм</a>
+</footer>
+</body>
+</html>

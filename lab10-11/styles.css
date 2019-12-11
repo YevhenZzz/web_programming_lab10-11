@@ -1,0 +1,371 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+header {
+    margin: 10px;
+}
+
+hr {
+
+    color: black;
+    width: 1000px;
+}
+
+h1 {
+    position: center;
+    left: -2%;
+    color: white;
+}
+
+a {
+    color: greenyellow;
+}
+
+h3 {
+    color: black;
+    background: white;
+    display: inline-block;
+    padding: 25px;
+    margin: 125px;
+    border-bottom: azure;
+
+}
+
+.dws-menu *,
+.overlay *{
+    padding: 0;
+    margin: 0;
+}
+
+.dws-menu ul,
+.dws-menu ol,
+.overlay ul,
+.overlay ol {
+    list-style: none;
+    white-space: nowrap;
+}
+
+.dws-menu > ul {
+    display: flex;
+    justify-content: center;
+}
+
+.dws-menu > ul li a {
+    display: block;
+    background: -webkit-linear-gradient(top, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* Chrome10-25,Safari5.1-6 */
+    background: -moz-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0);
+    padding: 15px 30px 15px 40px;
+    font-size: 100%;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.6s ease;
+}
+
+.dws-menu > ul li,
+.overlay > ul li {
+    position: relative;
+    border-right: 1px #c7c8ca;
+}
+
+.dws-menu > ul li > a i.fa,
+.overlay > ul li > a i.fa{
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    font-size: 18px;
+}
+
+.dws-menu > ul li:first-child,
+.overlay > ul li:first-child{
+    border-left: 1px solid #b2b3b5;
+}
+
+.dws-menu > li a:hover,
+.overlay > li a:hover{
+    background: #454547;
+    color: #ffffff;
+    box-shadow: 1px 5px 10px -5px black;
+    transition: all 0.3s ease;
+}
+
+.dws-menu li ul,
+.overlay li ul{
+    position: absolute;
+    min-width: 150px;
+    display: none;
+}
+
+.dws-menu li > ul li {
+    border: 1px solid #c7c8ca;
+    position: center; left: -5px;
+}
+
+.dws-menu lu > ul li a {
+    padding: 10px;
+    text-transform: none;
+    background: #e4e4e5;
+}
+
+.dws-menu li:hover > ul {
+    display: block;
+}
+
+.dws-menu a:hover {
+    background: red;
+}
+.area {
+    text-align: center;
+    font-size: 6.5em;
+    color: #fff;
+    letter-spacing: -7px;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation: blur .75s ease-out infinite;
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+@keyframes blur {
+    from {
+        text-shadow:0px 0px 10px #fff,
+        0px 0px 10px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 50px #fff,
+        0px 0px 50px #fff,
+        0px 0px 50px #7B96B8,
+        0px 0px 150px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px -10px 100px #7B96B8,
+        0px -10px 100px #7B96B8;
+    }
+}
+
+.butt{
+    border: 3px solid #218294;
+    font-size: 30px;
+    color: black;
+    background: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 400px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    line-height: 32px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    transition-delay: .5s;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.butt2{
+    border: 3px solid #218294;
+    font-size: 30px;
+    color: black;
+    background: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 250px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    line-height: 32px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    transition-delay: .5s;
+    overflow: hidden;
+    border-radius: 10px;
+    left: 29%;
+}
+.butt::before,
+.butt::after,
+.butt::before,
+.butt::after
+{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: black;
+    top: 0;
+    left: -100%;
+    opacity: .5;
+    transition: .3s;
+    z-index: -1;
+}
+
+.butt::after,
+.butt2::after
+{
+    opacity: 1;
+    transition-delay: .1s;
+}
+
+.butt:hover,
+.butt2:hover{
+    color: black;
+}
+
+.butt:hover::before, .butt:hover::after,
+.butt2:hover::before, .butt2:hover::after
+{
+
+    left: 0;
+}
+
+.overlay {
+    text-decoration: none;
+    display: none;
+    width: 250px;
+    background: black;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0);
+    color: white;
+    position: fixed;
+    left: -228px;
+    top: 0;
+    bottom: 0;
+    right: 100px;
+    transition: all ease 0.5s;
+}
+
+.overlay::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: url("iconfinder_th-menu_216424.png");
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+}
+
+.overlay:hover {
+    left: 0;
+    text-align: center;
+    width: 150px;
+    text-decoration: none;
+    padding: 0;
+    display: block;
+    background: black;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0);
+}
+@media screen and (min-width: 1000px){
+    .overlay {
+        display: none;
+    }
+    .myNav {
+        display: none;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .overlay {
+        display: block;
+    }
+    .dws-menu {
+        display: none;
+    }
+    .leftpic {
+        display: none;
+    }
+   . {
+        display: none;
+    }
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 23px;
+    font-size: 60px;
+
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.dropbtn {
+    background-color: black;
+    color: #818181;
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 30px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+    right: -40%;
+    align-content: center;
+}
+
+.dropdown-content a {
+    color: #818181;
+    padding: 12px 45px;
+    text-decoration: none;
+    display: block;
+    font-size: 17px;
+    align-content: center;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block}
+

@@ -1,0 +1,13 @@
+CACHE MANIFEST
+
+CACHE:
+index.html
+error.html
+
+js/storage.js
+js/admin.js
+js/fansAppeal.js
+js/news.js
+
+FALLBACK:
+/ /error.html

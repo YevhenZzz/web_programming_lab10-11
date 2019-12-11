@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link type="text/css"
+          href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<style>
+    @media screen and (min-width: 1080px) {
+        span {
+            display: none;
+        }
+
+    }
+    @media screen and (max-width: 1080px){
+        span {
+            display: block;
+        }
+    }
+    .leftpic{
+        float: left;
+        position: relative; left: -23%;
+    }
+</style>
+</head>
+<body>
+<header>
+    <nav class="dws-menu">
+        <ul>
+            <img src="eminem_logo.jpg" alt="logo here" width="120" height="120" class="leftpic">
+            <li><a href="index.html"><i class="fa fa-"></i>Main</a></li>
+            <li><a href="news.html"><i class="fa fa-"></i>News</a></li>
+            <li><a href="#"><i class="fa fa-"></i>For fans</a>
+                <ul>
+                    <li><a href="fans_appeal.html">Fan club</a></li>
+                    <li><a href="tour_schedule.html">Tour schedule</a></li>
+                    <li><a href="#">Lyrics</a></li>
+                </ul>
+            </li>
+            <li><a href="fans_appeal.html"><i class="fa fa-"></i>Fans appeal</a></li>
+            <li><a href="concert_venue.html"><i class="fa fa-"></i>Concert Venue</a></li>
+            <li><a href="admin.html"><i class="fa fa-"></i>Admin</a></li>
+        </ul>
+    </nav>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#">MAIN</a>
+            <a href="#">NEWS</a>
+            <a href="#">FOR FANS</a>
+            <a href="#">FANS APPEAL</a>
+            <a href="#">CONCERT VENUE</a>
+            <a href="#">ADMIN</a>
+        </div>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "25%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</header>
+<p class="step"></p>
+<main>
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-10 mx-auto p-3 order-1 order-md-2">
+                    <input type="file" name="newsImage" accept="image/*">
+                    <img id="uploadedImage" class="img-fluid mt-3" src="fans_apeal.jpg" alt="New image">
+                </div>
+                <div class="col-md-6 order-2 order-md-1 mx-auto m-3 text-center">
+                    <button id="addImageButton" class="btn btn-secondary pl-5 pr-5" type="button">Add image</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-10 mx-auto order-1 order-md-2 form-group">
+                    <label for="newsTitle"></label>
+                    <textarea id="newsTitle" class="form-control z-depth-1" rows="1" placeholder="News title"></textarea>
+                    <label for="newsBody"></label>
+                    <textarea id="newsBody" class="form-control z-depth-1" rows="6" placeholder="News body"></textarea>
+                </div>
+                <div class="col-md-6 order-2 order-md-1 mx-auto mt-4 text-center">
+                    <button id="sendNewsButton" class="btn btn-secondary pl-5 pr-5" type="button">Send</button>
+                </div>
+            </div>
+        </div>
+    </article>
+</main>
+<br>
+<footer>
+    <font color="black"> Mady by Yevhen Bufan -->  </font> <a href="https://www.instagram.com/jsscotecry">Мій Інстаграм</a>
+</footer>
+<script src="storage.js" type="text/javascript"></script>
+<script src="admin.js"></script>
+
+</body>
+</html>

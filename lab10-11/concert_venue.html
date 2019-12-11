@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://epicblog.net/templates/tx_zmash/css/animate.css">
+    <script src="https://epicblog.net/templates/tx_zmash/js/wow.min.js"></script>
+    <script src="https://epicblog.net/templates/tx_zmash/js/wow.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Just concert venue</title>
+    <style>
+        @media screen and (min-width: 1080px) {
+            span {
+                display: none;
+            }
+
+        }
+        @media screen and (max-width: 1080px){
+            span {
+                display: block;
+            }
+        }
+        h2{
+            color: white;
+        }
+        .leftpic{
+            float: left;
+            position: relative; left: -25%;
+        }
+        body
+        { background: url(concert_venue.jpg) no-repeat fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="dws-menu">
+        <ul>
+            <img src="eminem_logo.jpg" alt="logo here" width="120" height="120" class="leftpic">
+            <li><a href="index.html"><i class="fa fa-"></i>Main</a></li>
+            <li><a href="news.html"><i class="fa fa-"></i>News</a></li>
+            <li><a href="#"><i class="fa fa-"></i>For fans</a>
+                <ul>
+                    <li><a href="fans_appeal.html">Fan club</a></li>
+                    <li><a href="tour_schedule.html">Tour schedule</a></li>
+                    <li><a href="#">Lyrics</a></li>
+                </ul>
+            </li>
+            <li><a href="fans_appeal.html"><i class="fa fa-"></i>Fans appeal</a></li>
+            <li><a href="concert_venue.html"><i class="fa fa-"></i>Concert Venue</a></li>
+            <li><a href="admin.html"><i class="fa fa-"></i>Admin</a></li>
+        </ul>
+    </nav>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#">MAIN</a>
+            <a href="#">NEWS</a>
+            <a href="#">FOR FANS</a>
+            <a href="#">FANS APPEAL</a>
+            <a href="#">CONCERT VENUE</a>
+            <a href="#">ADMIN</a>
+        </div>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "25%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</header>
+<center><h2>The place of next concert</h2></center>
+<br>
+<center><h3> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2576.595541191428!2d24.025485951470912!3
+d49.7748646435912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae7c45ad648ef%3A0xf15582fcd2b48f5b!2z0JDRgNC10L
+3QsCDQm9GM0LLQvtCy!5e0!3m2!1sru!2sua!4v1571237593792!5m2!1sru!2sua" width="1500" height="360    " frameborder="0" style="border:0;" allowfullscreen=""></iframe></h3></center>
+<br><br>
+<center><h3><font color="black">Street of the Karl Micklosh, Lviv, Ukraine<br>Contact number for buying ticket: 0-800-500-350<br>
+Contact number for victim 0-500-800-325</font> </h3></center>
+<br><br><br>
+<center><div class="dws"><a href="#" class="butt"><font color="red"> buy a ticket now!!!</font></a></div></center>
+<footer>
+    <font color="red"> Mady by Yevhen Bufan -->  </font> <a href="https://www.instagram.com/jsscotecry">Мій Інстаграм</a>
+</footer>
+</body>
